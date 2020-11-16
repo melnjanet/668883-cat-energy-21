@@ -4,19 +4,27 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page-body">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38"
+  <body class="page__body">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img src="https://via.placeholder.com/191x38" width="191" height="38"
                alt="Логотип Cat Energy">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="header__main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -30,7 +38,7 @@
           </p>
           <img src="https://via.placeholder.com/280x270" width="270" height="280"
                alt="Упаковка с кормом 'Cat Energy Pro Курица'">
-          <a class="intro__form button" href="form.html">Подобрать программу</a>
+          <a class="button intro__button " href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="catalog">
@@ -58,28 +66,28 @@
         <div class="advantage__wrapper">
           <h2 class="advantage__title">Как это работает</h2>
           <ul class="advantage__list">
-            <li class="advantage__item advantage__item-useful">
+            <li class="advantage__item advantage__item--useful">
               <p class="advantage__description">
                 Функциональное питание
                 содержит только полезные
                 питательные вещества.
               </p>
             </li>
-            <li class="advantage__item advantage__item-easy">
+            <li class="advantage__item advantage__item--easy">
               <p class="advantage__description">
                 Выпускается в виде порошка,
                 который нужно лишь залить
                 кипятком и готово.
               </p>
             </li>
-            <li class="advantage__item advantage__item-nutritious">
+            <li class="advantage__item advantage__item--nutritious">
               <p class="advantage__description">
                 Замените один-два приема
                 обычной еды на наше
                 функциональное питание.
               </p>
             </li>
-            <li class="advantage__item advantage__item-quick-impact ">
+            <li class="advantage__item advantage__item--quick-impact ">
               <p class="advantage__description">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
@@ -114,12 +122,12 @@
                 <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Стройный кот">
               </li>
             </ul>
-            <button class="slider__toggle slider__toggle__before slider__toggle__active">Было</button>
+            <button class="slider__toggle slider__toggle--before slider__toggle--current" type="button">Было</button>
             <div class="scale__line">
               <div class="scale__level slider__scale__level"></div>
-              <button class="scale__pin" aria-label="кнопка сравнения результата"></button>
+              <div class="scale__pin"></div>
             </div>
-            <button class="slider__toggle slider__toggle__after">Стало</button>
+            <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
           </div>
         </div>
       </section>
@@ -147,11 +155,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="footer__logo">
-          <a>
-            <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Лого Кэт энерджи">
-          </a>
-        </div>
+        <a class="footer__logo">
+          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Лого Кэт энерджи">
+        </a>
         <div class="page-footer__social social">
           <ul class="social-list">
             <li class="social__item">
