@@ -1,0 +1,27 @@
+.main-nav__list {
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @basic-black;
+}
+
+.main-nav__item-link {
+  display: block;
+  padding: 23px 20px;
+  color: @special-black;
+  text-decoration: none;
+  border-bottom: 1px solid @special-grey-whisper;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    text-decoration: underline;
+    text-decoration-color: @basic-green;
+    opacity: 0.3;
+  }
+}
