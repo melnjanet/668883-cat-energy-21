@@ -5,7 +5,7 @@
 }
 
 .case__title {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-font-family;
   font-weight: inherit;
   font-size: 36px;
   line-height: 40px;
@@ -14,7 +14,7 @@
 }
 
 .case__description {
-  font-family: "Arial", sans-serif;
+  font-family: @extra-font-family;
   font-weight: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -26,7 +26,7 @@
 }
 
 .case__value {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-font-family;
   font-weight: inherit;
   font-size: 24px;
   line-height: 24px;
@@ -34,15 +34,19 @@
 }
 
 .case__legend {
-  font-family: "Arial", sans-serif;
+  font-family: @extra-font-family;
   font-weight: inherit;
   font-size: 12px;
   line-height: 12px;
   color: @special_darker-darkgrey;
 }
 
+.case__wrapper {
+  .wrapper;
+}
+
 .case__total {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-font-family;
   font-weight: inherit;
   font-size: 14px;
   line-height: 20px;

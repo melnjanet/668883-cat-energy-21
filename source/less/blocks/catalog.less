@@ -1,8 +1,12 @@
 .catalog {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-font-family;
   font-style: normal;
   font-weight: normal;
   margin-bottom: 27px;
+}
+
+.catalog__wrapper {
+  .wrapper;
 }
 
 .catalog__list {
@@ -27,6 +31,8 @@
 
 .catalog__description {
   color: @special_darker-darkgrey;
+  border-bottom: 1px solid @special-grey85;
+  padding-bottom: 20px;
 }
 
 .catalog__link {
