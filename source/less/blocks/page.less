@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  background-color: @basic-white;
+}
