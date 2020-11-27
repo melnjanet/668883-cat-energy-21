@@ -10,10 +10,9 @@
   padding: 0;
 }
 
-.main-nav__item-link {
+.main-nav__item {
   display: block;
   padding: 23px 20px;
-  color: @special-black;
   text-decoration: none;
   border-bottom: 1px solid @special-grey-whisper;
 
@@ -26,4 +25,12 @@
     text-decoration-color: @basic-green;
     opacity: 0.3;
   }
+}
+
+.main-nav__item-link {
+  color: @special-black;
+}
+
+.main-nav__list :last-child {
+  border: none;
 }

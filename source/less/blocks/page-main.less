@@ -1,10 +1,11 @@
 .page-main {
   grid-area: content;
-  border-top: 1px solid @special-grey85;
 }
 
-.page-main__wrapper {
-  .wrapper;
+.page-main__header-wrapper {
+  border-top: 1px solid @special-grey85;
+  border-bottom: 1px solid @special-grey85;
+  .wrapper(27px, 45px);
 }
 
 .page-main__title {
@@ -13,7 +14,6 @@
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
-  min-height: 105px;
   display: flex;
   align-items: center;
 }
