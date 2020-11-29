@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Подбор программы</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Academy: Каталог продукции</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">
+        <a  class="header__logo" href="index.html">
           <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
         </a>
-        <nav class="main-nav  header__main-nav">
+        <nav class="main-nav header__main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -29,8 +31,10 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
-        <section class="main-products">
+      <div class="page-main__header-wrapper">
+        <h1 class="page-main__title">Каталог продукции</h1>
+      </div>
+      <section class="main-products">
           <ul class="main-products__list">
             <li class="main-products__item">
               <h3 class="main-products__title">
@@ -56,7 +60,7 @@
                   <td>700 Р.</td>
                 </tr>
               </table>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="main-products__item">
               <h3 class="main-products__title">
@@ -82,7 +86,7 @@
                   <td>1000 Р.</td>
                 </tr>
               </table>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="main-products__item">
               <h3 class="main-products__title">
@@ -212,7 +216,7 @@
                   <td>500 Р.</td>
                 </tr>
               </table>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="main-products__item product-more">
               <h3 class="main-products__title">
@@ -224,11 +228,11 @@
               <div class="main-products__image main-products__more__image">
                 <p class="main-products__text">На самом деле вкусов гораздо больше!</p>
               </div>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button--more" href="#">Показать все</a>
             </li>
           </ul>
         </section>
-        <section class="additional-products">
+      <section class="additional-products">
           <ul class="additional-products__list">
             <li class="additional-products__item">
               <h3 class="additional-products__title">
@@ -240,7 +244,7 @@
                 <dt>1 упаковка (100 г)</dt>
                 <dd>200 Р.</dd>
               </dl>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">
@@ -252,7 +256,7 @@
                 <dt>5 литров</dt>
                 <dd>50 Р.</dd>
               </dl>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">
@@ -264,7 +268,7 @@
                 <dt>1 литр</dt>
                 <dd>100 Р.</dd>
               </dl>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__title">
@@ -276,17 +280,18 @@
                 <dt>1 упаковка (30 г)</dt>
                 <dd>300 Р.</dd>
               </dl>
-              <a class="button main-products__button" href="#">Заказать</a>
+              <a class="main-products__button" href="#">Заказать</a>
             </li>
           </ul>
         </section>
-        <section class="gift">
+      <section class="gift">
+        <div class="gift__wrapper">
           <p class="gift__title">
             Закажите все
             и получите чехол для
             кота в подарок!</p>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">
@@ -297,11 +302,11 @@
               Приглашаем
               к сотрудничеству дилеров!
             </div>
-            <div class="contacts__address">
+            <address class="contacts__address">
               ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург
-            </div>
+            </address>
           </div>
           <div class="contacts__map map">
             <img src="https://via.placeholder.com/311x232" width="320" height="362" alt="Карта с адресом магазина">
