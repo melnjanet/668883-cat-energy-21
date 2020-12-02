@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <nav class="main-nav  header__main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--active">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header header__wrapper">
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
+      </a>
+      <nav class="main-nav header__main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__wrapper">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index main-nav__item-link--index-active">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--index" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
       <section class="intro">
@@ -37,7 +35,7 @@
           <p class="intro__slogan">
             Занялся собой? Займись котом!
           </p>
-          <img src="https://via.placeholder.com/280x270" width="270" height="280" alt="Упаковка с кормом 'Cat Energy Pro Курица'">
+          <img class="intro__image" src="https://via.placeholder.com/280x270" width="270" height="280" alt="Упаковка с кормом 'Cat Energy Pro Курица'">
           <a class="intro__button " href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -72,6 +70,7 @@
                 содержит только полезные
                 питательные вещества.
               </p>
+              <span class="advantage__number-background">1</span>
             </li>
             <li class="advantage__item advantage__item--easy">
               <p class="advantage__description">
@@ -79,6 +78,7 @@
                 который нужно лишь залить
                 кипятком и готово.
               </p>
+              <span class="advantage__number-background">2</span>
             </li>
             <li class="advantage__item advantage__item--nutritious">
               <p class="advantage__description">
@@ -86,11 +86,13 @@
                 обычной еды на наше
                 функциональное питание.
               </p>
+              <span class="advantage__number-background">3</span>
             </li>
             <li class="advantage__item advantage__item--quick-impact ">
               <p class="advantage__description">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
+              <span class="advantage__number-background">4</span>
             </li>
           </ul>
         </div>
@@ -105,14 +107,14 @@
           <ul class="case__list">
             <li class="case__item">
               <div class="case__value">5 кг</div>
-              <p class="case__legend">снижение веса</p>
+              <p class="case__legend">снижение<br> веса</p>
             </li>
             <li class="case__item">
               <div class="case__value">60 дней</div>
-              <p class="case__legend">затрачено времени</p>
+              <p class="case__legend">затрачено<br> времени</p>
             </li>
           </ul>
-          <p class="case__total">Затраты на питание: <span class="case__amount">15 000 руб.</span></p>
+          <p class="case__total">Затраты на питание:<br> <span class="case__amount">15 000 руб.</span></p>
           <div class="case__slider slider">
             <ul class="slider__list">
               <li class="slider__item slider__item--before">
@@ -142,20 +144,20 @@
               к сотрудничеству дилеров!
             </div>
             <address class="contacts__address">
-              ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург
+              <span class="contact__street">ул. Большая
+              Конюшенная, д. 19/8</span>
+              <span class="contact__city">Санкт-Петербург</span>
             </address>
           </div>
-          <div class="contacts__map map">
-            <img src="https://via.placeholder.com/311x232" width="320" height="362" alt="Карта с адресом магазина">
-          </div>
+        </div>
+        <div class="contacts__map map">
+          <img src="https://via.placeholder.com/311x232" width="320" height="362" alt="Карта с адресом магазина">
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="footer__logo">
+        <a class="page-footer__logo">
           <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Лого Кэт энерджи">
         </a>
         <div class="page-footer__social social">
