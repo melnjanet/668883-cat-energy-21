@@ -3,19 +3,30 @@
   font-style: normal;
   font-weight: normal;
   color: @basic-white;
-  background-image: url("https://via.placeholder.com/320x270");
-  background-repeat: no-repeat;
   margin-bottom: 22px;
+  outline-offset: -2px;
+}
+
+.intro::before {
+  content: " ";
+  background: url("https://via.placeholder.com/320x302") no-repeat top center @basic-green-transparent-085;
+  background-size: 320px auto;
+  width: 100%;
+  height: 302px;
+  position: absolute;
+  z-index: -1;
 }
 
 .intro__wrapper {
-  .wrapper;
+  .wrapper(27px);
+  text-align: center;
 }
 
 .intro__title {
   font-weight: inherit;
   font-size: 36px;
   line-height: 36px;
+  margin: 0 0 25px 0;
 }
 
 .intro__slogan {
@@ -26,4 +37,69 @@
 
 .intro__button {
   .button;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    min-height: 800px;
+  }
+
+  .intro::before {
+    content: none;
+  }
+
+  .intro__wrapper {
+    .wrapper(25px, 29px, 64px, 117px);
+    text-align: left;
+    position: relative;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic-black;
+    max-width: 414px;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+    margin-bottom: 49px;
+  }
+
+  .intro__image {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
+  }
+
+  .intro__button {
+    width: 244px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    min-height: 570px;
+  }
+
+  .intro::before {
+    content: " ";
+    background-position: left;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    left: 50%;
+  }
+
+  .intro__wrapper {
+    .wrapper(54px, 110px, 74px, 190px);
+  }
+
+  .intro__image {
+    top: -70px;
+    left: 600px;
+  }
 }

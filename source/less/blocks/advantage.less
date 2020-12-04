@@ -2,6 +2,7 @@
   font-family: @main-font-family;
   font-style: normal;
   font-weight: normal;
+  min-height: 500px;
 }
 
 .advantage__wrapper {
@@ -23,6 +24,51 @@
 }
 
 .advantage__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
+}
+
+.advantage__number-background {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantage__item {
+    width: calc(50% - 30px);
+    min-height: 280px;
+    margin-bottom: 37px;
+    display: flex;
+  }
+
+  .advantage__number-background {
+    display: block;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic-gray;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__wrapper {
+    .wrapper(54px, 110px, 74px, 110px);
+  }
+
+  .advantage__item {
+    width: 230px;
+    min-height: 280px;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .advantage__description {
+    position: absolute;
+  }
 }
