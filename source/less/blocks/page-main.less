@@ -6,6 +6,16 @@
   border-top: 1px solid @special-grey85;
   border-bottom: 1px solid @special-grey85;
   .wrapper(27px, 45px);
+
+  @media (min-width: @tablet-width) {
+    .wrapper(20px, 70px, 20px, 70px);
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper(20px, 110px, 20px, 110px);
+    border: none;
+  }
 }
 
 .page-main__title {
@@ -16,6 +26,11 @@
   color: @basic-black;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__info {
@@ -25,4 +40,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
