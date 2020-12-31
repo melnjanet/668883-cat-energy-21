@@ -19,7 +19,8 @@
 }
 
 .header__wrapper {
-  .wrapper(0, 0, 0, 0);
+  .wrapper;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     .wrapper(25px, 29px, 64px, 30px);
@@ -30,20 +31,17 @@
   }
 }
 
-.header__logo {
-  height: 37px;
-  padding: 11px 20px 17px 20px;
+.header__logo-image {
+  width: 191px;
+  height: 38px;
 
   @media (min-width: @tablet-width) {
+    width: 174px;
     height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 60px;
+    width: 202px;
+    height: 59px;
   }
-}
-
-.header__logo img {
-  width: 191px;
-  height: 38px;
 }

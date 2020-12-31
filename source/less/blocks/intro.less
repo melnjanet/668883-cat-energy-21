@@ -16,11 +16,12 @@
 
   &::before {
     content: " ";
-    background: url("https://via.placeholder.com/320x302") no-repeat top center @basic-green-transparent-085;
+    background: url("../img/index-intro-bg-mobile@1x.png") no-repeat top center;
     background-size: 320px auto;
     width: 100%;
     height: 302px;
     position: absolute;
+    background-color: @basic-green-transparent-085;
     z-index: -1;
 
     @media (min-width: @tablet-width) {
@@ -29,11 +30,12 @@
 
     @media (min-width: @desktop-width) {
       content: " ";
-      background-position: left;
       width: 50%;
       height: 694px;
       top: 0;
       left: 50%;
+      background: url("../img/index-intro-bg-desktop@1x.png") no-repeat top center;
+      background-size: 720px auto;
     }
   }
 }
@@ -71,6 +73,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -83,14 +86,14 @@
 .intro__image {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 205px;
+    left: 50px;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
-    top: -70px;
-    left: 600px;
+    top: -25px;
+    left: 560px;
   }
 }
 

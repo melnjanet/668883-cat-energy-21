@@ -1,6 +1,17 @@
+.slider__scale {
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider__list {
   padding: 0;
   list-style: none;
+  width: 100%;
+  text-align: center;
 }
 
 .slider__toggle {
@@ -10,4 +21,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @basic-black;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted @special-grey85;
+  }
 }
